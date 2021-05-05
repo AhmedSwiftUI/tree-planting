@@ -8,8 +8,12 @@
 import SwiftUI
 import GoogleMaps
 
+
+
 let APIKey = "AIzaSyDzm1UZF7h2YqWkjBN2Bh078b28XyvEnjw"
 
+
+// من هنا نجلب الAPI لGoogle Maps
 class AppDelegate: NSObject, UIApplicationDelegate    {
      func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
          GMSServices.provideAPIKey(APIKey)
@@ -17,6 +21,8 @@ class AppDelegate: NSObject, UIApplicationDelegate    {
      }
  }
 
+
+// هنا نهيئ الDelegate الخاص فينا للبنية الاساسية عن طريق UIApplicationDelegateAdaptor
 @main
 struct Tree_plantingApp: App {
     

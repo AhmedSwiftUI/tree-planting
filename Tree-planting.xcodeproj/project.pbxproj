@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,6 +12,8 @@
 		E2603F4A2641E4ED004972B2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2603F492641E4ED004972B2 /* ContentView.swift */; };
 		E2603F4C2641E4F0004972B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2603F4B2641E4F0004972B2 /* Assets.xcassets */; };
 		E2603F4F2641E4F0004972B2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2603F4E2641E4F0004972B2 /* Preview Assets.xcassets */; };
+		E26915EB264238A8001F094B /* GoogleMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26915EA264238A8001F094B /* GoogleMapView.swift */; };
+		E26915EF26424C1B001F094B /* CurrentLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26915EE26424C1B001F094B /* CurrentLocation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		E2603F4B2641E4F0004972B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2603F4E2641E4F0004972B2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E2603F502641E4F0004972B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E26915EA264238A8001F094B /* GoogleMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMapView.swift; sourceTree = "<group>"; };
+		E26915EE26424C1B001F094B /* CurrentLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentLocation.swift; sourceTree = "<group>"; };
 		E5691D36F9EE8A9AC31B8EEE /* Pods_Tree_planting.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tree_planting.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -44,7 +48,6 @@
 				4F7C5C4A2178DBFCE7D52C62 /* Pods-Tree-planting.debug.xcconfig */,
 				2C33884CD9397D7B065E54C3 /* Pods-Tree-planting.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -77,11 +80,14 @@
 		E2603F462641E4ED004972B2 /* Tree-planting */ = {
 			isa = PBXGroup;
 			children = (
+				E26915F126425923001F094B /* Map View */,
 				E2603F472641E4ED004972B2 /* Tree_plantingApp.swift */,
 				E2603F492641E4ED004972B2 /* ContentView.swift */,
 				E2603F4B2641E4F0004972B2 /* Assets.xcassets */,
 				E2603F502641E4F0004972B2 /* Info.plist */,
 				E2603F4D2641E4F0004972B2 /* Preview Content */,
+				E26915ED26424BD6001F094B /* Current Location */,
+				E26915EA264238A8001F094B /* GoogleMapView.swift */,
 			);
 			path = "Tree-planting";
 			sourceTree = "<group>";
@@ -92,6 +98,21 @@
 				E2603F4E2641E4F0004972B2 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E26915ED26424BD6001F094B /* Current Location */ = {
+			isa = PBXGroup;
+			children = (
+				E26915EE26424C1B001F094B /* CurrentLocation.swift */,
+			);
+			path = "Current Location";
+			sourceTree = "<group>";
+		};
+		E26915F126425923001F094B /* Map View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Map View";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +228,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E26915EF26424C1B001F094B /* CurrentLocation.swift in Sources */,
+				E26915EB264238A8001F094B /* GoogleMapView.swift in Sources */,
 				E2603F4A2641E4ED004972B2 /* ContentView.swift in Sources */,
 				E2603F482641E4ED004972B2 /* Tree_plantingApp.swift in Sources */,
 			);
