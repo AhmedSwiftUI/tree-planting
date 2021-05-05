@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		85DB7853FD70E517B88214EA /* Pods_Tree_planting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5691D36F9EE8A9AC31B8EEE /* Pods_Tree_planting.framework */; };
 		E2603F482641E4ED004972B2 /* Tree_plantingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2603F472641E4ED004972B2 /* Tree_plantingApp.swift */; };
 		E2603F4A2641E4ED004972B2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2603F492641E4ED004972B2 /* ContentView.swift */; };
 		E2603F4C2641E4F0004972B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2603F4B2641E4F0004972B2 /* Assets.xcassets */; };
@@ -14,12 +15,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C33884CD9397D7B065E54C3 /* Pods-Tree-planting.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tree-planting.release.xcconfig"; path = "Target Support Files/Pods-Tree-planting/Pods-Tree-planting.release.xcconfig"; sourceTree = "<group>"; };
+		4F7C5C4A2178DBFCE7D52C62 /* Pods-Tree-planting.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tree-planting.debug.xcconfig"; path = "Target Support Files/Pods-Tree-planting/Pods-Tree-planting.debug.xcconfig"; sourceTree = "<group>"; };
 		E2603F442641E4ED004972B2 /* Tree-planting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tree-planting.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2603F472641E4ED004972B2 /* Tree_plantingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tree_plantingApp.swift; sourceTree = "<group>"; };
 		E2603F492641E4ED004972B2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E2603F4B2641E4F0004972B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2603F4E2641E4F0004972B2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E2603F502641E4F0004972B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5691D36F9EE8A9AC31B8EEE /* Pods_Tree_planting.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tree_planting.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,17 +31,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85DB7853FD70E517B88214EA /* Pods_Tree_planting.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		137E0D3A63E001DDA0AD836E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4F7C5C4A2178DBFCE7D52C62 /* Pods-Tree-planting.debug.xcconfig */,
+				2C33884CD9397D7B065E54C3 /* Pods-Tree-planting.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BB4B6194BBDC67AFCCD65A56 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E5691D36F9EE8A9AC31B8EEE /* Pods_Tree_planting.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E2603F3B2641E4ED004972B2 = {
 			isa = PBXGroup;
 			children = (
 				E2603F462641E4ED004972B2 /* Tree-planting */,
 				E2603F452641E4ED004972B2 /* Products */,
+				137E0D3A63E001DDA0AD836E /* Pods */,
+				BB4B6194BBDC67AFCCD65A56 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E2603F532641E4F0004972B2 /* Build configuration list for PBXNativeTarget "Tree-planting" */;
 			buildPhases = (
+				7C006C947399C2E8B518D5FF /* [CP] Check Pods Manifest.lock */,
 				E2603F402641E4ED004972B2 /* Sources */,
 				E2603F412641E4ED004972B2 /* Frameworks */,
 				E2603F422641E4ED004972B2 /* Resources */,
+				3773BE9E713788114068F7AA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3773BE9E713788114068F7AA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tree-planting/Pods-Tree-planting-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tree-planting/Pods-Tree-planting-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Tree-planting/Pods-Tree-planting-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7C006C947399C2E8B518D5FF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tree-planting-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E2603F402641E4ED004972B2 /* Sources */ = {
@@ -264,6 +333,7 @@
 		};
 		E2603F542641E4F0004972B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F7C5C4A2178DBFCE7D52C62 /* Pods-Tree-planting.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -285,6 +355,7 @@
 		};
 		E2603F552641E4F0004972B2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C33884CD9397D7B065E54C3 /* Pods-Tree-planting.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
