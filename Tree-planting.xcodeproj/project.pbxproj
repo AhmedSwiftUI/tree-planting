@@ -14,6 +14,9 @@
 		E2603F4F2641E4F0004972B2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2603F4E2641E4F0004972B2 /* Preview Assets.xcassets */; };
 		E26915EB264238A8001F094B /* GoogleMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26915EA264238A8001F094B /* GoogleMapView.swift */; };
 		E26915EF26424C1B001F094B /* CurrentLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26915EE26424C1B001F094B /* CurrentLocation.swift */; };
+		E26915FF26432A5B001F094B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E26915FE26432A5A001F094B /* GoogleService-Info.plist */; };
+		E269160F26433A9D001F094B /* GoogleSignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = E269160E26433A9D001F094B /* GoogleSignIn.swift */; };
+		E269165726438DFC001F094B /* tree.json in Resources */ = {isa = PBXBuildFile; fileRef = E269165626438DFC001F094B /* tree.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +30,9 @@
 		E2603F502641E4F0004972B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E26915EA264238A8001F094B /* GoogleMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMapView.swift; sourceTree = "<group>"; };
 		E26915EE26424C1B001F094B /* CurrentLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentLocation.swift; sourceTree = "<group>"; };
+		E26915FE26432A5A001F094B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E269160E26433A9D001F094B /* GoogleSignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignIn.swift; sourceTree = "<group>"; };
+		E269165626438DFC001F094B /* tree.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tree.json; sourceTree = "<group>"; };
 		E5691D36F9EE8A9AC31B8EEE /* Pods_Tree_planting.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tree_planting.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -63,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				E2603F462641E4ED004972B2 /* Tree-planting */,
+				E2603F4B2641E4F0004972B2 /* Assets.xcassets */,
 				E2603F452641E4ED004972B2 /* Products */,
 				137E0D3A63E001DDA0AD836E /* Pods */,
 				BB4B6194BBDC67AFCCD65A56 /* Frameworks */,
@@ -80,14 +87,15 @@
 		E2603F462641E4ED004972B2 /* Tree-planting */ = {
 			isa = PBXGroup;
 			children = (
-				E26915F126425923001F094B /* Map View */,
+				E269165626438DFC001F094B /* tree.json */,
+				E269160D26433A6A001F094B /* Google Sign In */,
 				E2603F472641E4ED004972B2 /* Tree_plantingApp.swift */,
 				E2603F492641E4ED004972B2 /* ContentView.swift */,
-				E2603F4B2641E4F0004972B2 /* Assets.xcassets */,
+				E26915EA264238A8001F094B /* GoogleMapView.swift */,
 				E2603F502641E4F0004972B2 /* Info.plist */,
 				E2603F4D2641E4F0004972B2 /* Preview Content */,
+				E26915FE26432A5A001F094B /* GoogleService-Info.plist */,
 				E26915ED26424BD6001F094B /* Current Location */,
-				E26915EA264238A8001F094B /* GoogleMapView.swift */,
 			);
 			path = "Tree-planting";
 			sourceTree = "<group>";
@@ -108,11 +116,12 @@
 			path = "Current Location";
 			sourceTree = "<group>";
 		};
-		E26915F126425923001F094B /* Map View */ = {
+		E269160D26433A6A001F094B /* Google Sign In */ = {
 			isa = PBXGroup;
 			children = (
+				E269160E26433A9D001F094B /* GoogleSignIn.swift */,
 			);
-			path = "Map View";
+			path = "Google Sign In";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +136,7 @@
 				E2603F412641E4ED004972B2 /* Frameworks */,
 				E2603F422641E4ED004972B2 /* Resources */,
 				3773BE9E713788114068F7AA /* [CP] Copy Pods Resources */,
+				E4ECD2A8F70522D7E811C430 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -176,6 +186,8 @@
 			files = (
 				E2603F4F2641E4F0004972B2 /* Preview Assets.xcassets in Resources */,
 				E2603F4C2641E4F0004972B2 /* Assets.xcassets in Resources */,
+				E26915FF26432A5B001F094B /* GoogleService-Info.plist in Resources */,
+				E269165726438DFC001F094B /* tree.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,6 +233,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		E4ECD2A8F70522D7E811C430 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tree-planting/Pods-Tree-planting-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tree-planting/Pods-Tree-planting-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Tree-planting/Pods-Tree-planting-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -228,6 +257,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E269160F26433A9D001F094B /* GoogleSignIn.swift in Sources */,
 				E26915EF26424C1B001F094B /* CurrentLocation.swift in Sources */,
 				E26915EB264238A8001F094B /* GoogleMapView.swift in Sources */,
 				E2603F4A2641E4ED004972B2 /* ContentView.swift in Sources */,
