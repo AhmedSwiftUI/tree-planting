@@ -21,7 +21,9 @@ struct ContentView: View {
         
    treeview()
 
-GoogleMapsView()
+        
+  // خارطة قوقل
+//GoogleMapsView()
         
         
     }
