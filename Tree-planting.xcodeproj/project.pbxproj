@@ -14,10 +14,10 @@
 		E2603F4F2641E4F0004972B2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2603F4E2641E4F0004972B2 /* Preview Assets.xcassets */; };
 		E26915EB264238A8001F094B /* GoogleMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26915EA264238A8001F094B /* GoogleMapView.swift */; };
 		E26915EF26424C1B001F094B /* CurrentLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26915EE26424C1B001F094B /* CurrentLocation.swift */; };
-		E26915FF26432A5B001F094B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E26915FE26432A5A001F094B /* GoogleService-Info.plist */; };
 		E269160F26433A9D001F094B /* GoogleSignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = E269160E26433A9D001F094B /* GoogleSignIn.swift */; };
 		E269165726438DFC001F094B /* tree.json in Resources */ = {isa = PBXBuildFile; fileRef = E269165626438DFC001F094B /* tree.json */; };
 		E26916A82644FDB0001F094B /* TreeAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26916A72644FDB0001F094B /* TreeAnimation.swift */; };
+		E26916AC26454CE3001F094B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E26916AB26454CE2001F094B /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,10 +31,10 @@
 		E2603F502641E4F0004972B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E26915EA264238A8001F094B /* GoogleMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMapView.swift; sourceTree = "<group>"; };
 		E26915EE26424C1B001F094B /* CurrentLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentLocation.swift; sourceTree = "<group>"; };
-		E26915FE26432A5A001F094B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E269160E26433A9D001F094B /* GoogleSignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignIn.swift; sourceTree = "<group>"; };
 		E269165626438DFC001F094B /* tree.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tree.json; sourceTree = "<group>"; };
 		E26916A72644FDB0001F094B /* TreeAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeAnimation.swift; sourceTree = "<group>"; };
+		E26916AB26454CE2001F094B /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		E5691D36F9EE8A9AC31B8EEE /* Pods_Tree_planting.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tree_planting.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -97,7 +97,7 @@
 				E26916A52644FCE5001F094B /* Google Maps */,
 				E2603F502641E4F0004972B2 /* Info.plist */,
 				E2603F4D2641E4F0004972B2 /* Preview Content */,
-				E26915FE26432A5A001F094B /* GoogleService-Info.plist */,
+				E26916AB26454CE2001F094B /* GoogleService-Info.plist */,
 				E26915ED26424BD6001F094B /* Current Location */,
 			);
 			path = "Tree-planting";
@@ -205,7 +205,7 @@
 			files = (
 				E2603F4F2641E4F0004972B2 /* Preview Assets.xcassets in Resources */,
 				E2603F4C2641E4F0004972B2 /* Assets.xcassets in Resources */,
-				E26915FF26432A5B001F094B /* GoogleService-Info.plist in Resources */,
+				E26916AC26454CE3001F094B /* GoogleService-Info.plist in Resources */,
 				E269165726438DFC001F094B /* tree.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
