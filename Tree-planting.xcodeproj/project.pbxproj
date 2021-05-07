@@ -17,6 +17,7 @@
 		E26915FF26432A5B001F094B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E26915FE26432A5A001F094B /* GoogleService-Info.plist */; };
 		E269160F26433A9D001F094B /* GoogleSignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = E269160E26433A9D001F094B /* GoogleSignIn.swift */; };
 		E269165726438DFC001F094B /* tree.json in Resources */ = {isa = PBXBuildFile; fileRef = E269165626438DFC001F094B /* tree.json */; };
+		E26916A82644FDB0001F094B /* TreeAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26916A72644FDB0001F094B /* TreeAnimation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		E26915FE26432A5A001F094B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E269160E26433A9D001F094B /* GoogleSignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignIn.swift; sourceTree = "<group>"; };
 		E269165626438DFC001F094B /* tree.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tree.json; sourceTree = "<group>"; };
+		E26916A72644FDB0001F094B /* TreeAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeAnimation.swift; sourceTree = "<group>"; };
 		E5691D36F9EE8A9AC31B8EEE /* Pods_Tree_planting.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tree_planting.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -87,11 +89,12 @@
 		E2603F462641E4ED004972B2 /* Tree-planting */ = {
 			isa = PBXGroup;
 			children = (
-				E269165626438DFC001F094B /* tree.json */,
-				E269160D26433A6A001F094B /* Google Sign In */,
+				E26916A62644FD87001F094B /* Tree Animation */,
 				E2603F472641E4ED004972B2 /* Tree_plantingApp.swift */,
 				E2603F492641E4ED004972B2 /* ContentView.swift */,
-				E26915EA264238A8001F094B /* GoogleMapView.swift */,
+				E269165626438DFC001F094B /* tree.json */,
+				E269160D26433A6A001F094B /* Google Sign In */,
+				E26916A52644FCE5001F094B /* Google Maps */,
 				E2603F502641E4F0004972B2 /* Info.plist */,
 				E2603F4D2641E4F0004972B2 /* Preview Content */,
 				E26915FE26432A5A001F094B /* GoogleService-Info.plist */,
@@ -122,6 +125,22 @@
 				E269160E26433A9D001F094B /* GoogleSignIn.swift */,
 			);
 			path = "Google Sign In";
+			sourceTree = "<group>";
+		};
+		E26916A52644FCE5001F094B /* Google Maps */ = {
+			isa = PBXGroup;
+			children = (
+				E26915EA264238A8001F094B /* GoogleMapView.swift */,
+			);
+			path = "Google Maps";
+			sourceTree = "<group>";
+		};
+		E26916A62644FD87001F094B /* Tree Animation */ = {
+			isa = PBXGroup;
+			children = (
+				E26916A72644FDB0001F094B /* TreeAnimation.swift */,
+			);
+			path = "Tree Animation";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +276,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E26916A82644FDB0001F094B /* TreeAnimation.swift in Sources */,
 				E269160F26433A9D001F094B /* GoogleSignIn.swift in Sources */,
 				E26915EF26424C1B001F094B /* CurrentLocation.swift in Sources */,
 				E26915EB264238A8001F094B /* GoogleMapView.swift in Sources */,

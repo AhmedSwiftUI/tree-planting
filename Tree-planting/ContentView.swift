@@ -10,15 +10,19 @@ import GoogleMaps
 import Firebase
 import GoogleSignIn
 import Lottie
+
+
 struct ContentView: View {
     @ObservedObject  var myLocation = LocationManager()
-    
+  
+
     
     var body: some View {
         
-        treeview()
+   treeview()
+
+GoogleMapsView()
         
-        //        GoogleMapsView(locationManager: myLocation)
         
     }
 }
@@ -34,7 +38,6 @@ struct ContentView_Previews: PreviewProvider {
 
 struct treeview : View {
     @State var show = false
-    
     var body: some View {
         
         VStack {
@@ -53,15 +56,15 @@ struct treeview : View {
                     Divider()
                     Text("اقترح مكان مناسب على الخارطة لزرع الاشجار")
                     
-                    
-                    
-                    
                     Spacer()
                     Text("سجل دخولك من حساب قوقل وابدأ")
                     
-                    google()
-                        .frame(width: 200, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                     
+                    
+                    google()
+                        
+                        .frame(width: 150, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                       
                     
                     
                 }
@@ -73,7 +76,6 @@ struct treeview : View {
     
     // Animation
     struct AnimatedView: UIViewRepresentable {
-        
         
         @Binding var show: Bool
         func makeUIView(context: Context) -> AnimationView {
@@ -114,4 +116,3 @@ struct google : UIViewRepresentable {
     
     
 }
-
